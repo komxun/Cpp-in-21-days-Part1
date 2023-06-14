@@ -122,6 +122,54 @@ int a = ++x;    // same as    x = x+1;
 int b = x++;    // same as    b = x;
                 //            x = x+1;
 ```
+# if Statement
+- Multiple statements are required to be surrrounded by braces {}
+- For one statement, the braces {} are not required, but should be put for best practice
 
+```cpp
+// Single statement
+if (bigNum > smallNum)
+  bigNum = smallNum;
+
+// Single statement (good practice)
+if (bigNum > smallNum)
+{
+  bigNum = smallNum;
+}
+
+// Multiple statements
+if (bigNum > smallNum)
+{
+  bigNum = smallNum;
+  std::cout << "big number: " << bigNum << std::endl;
+  std::cout << "small number: " << smallNum << std::endl;
+}
+```
+
+https://github.com/komxun/Cpp-in-21-days-Week1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/nested_if_statement.cpp#L1-L37
+
+# Logical Operators
+- for best practice, use if(x != 0) instead of if(x), and use if(x == 0) instead of if(!x) 
+```cpp
+(x == 5) && (y == 5)    // Logical AND
+(x == 5) || (y == 5)    // Logical OR
+!(x == 5)               // Logical NOT (same as  x !=5 )
+```
+## Short Circuit Evaluation
+**Becareful! **
+- When the compiler is evaluating an AND statement, if the first statement is False then the second statement WILL NOT be evaluated !!!
+- When the compiler is evaluating and OR statement, if the first statement is True then the second statement WILL NOT be evaluated !!!
+```cpp
+if ( (x == 5) || (++y == 5) )
+// if x is 5 then (++y == 5) is not evaluated. If you are counting on y to be incremented regardless, it will not happen !
+```
+
+# The Conditional (Ternary) (?:) Operator
+- The conditional operator (?:) is C++'s only ternary operator, it is the only operator to take 3 terms
+```cpp
+(expression1) ? (expression2):(expression3)
+```
+This means "If expression1 is true, return the value of expression2; otherwise, return the value of expressio3."
+https://github.com/komxun/Cpp-in-21-days-Week1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/conditional_operator.cpp#L15-L28
 
 
