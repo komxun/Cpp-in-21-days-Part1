@@ -1,6 +1,8 @@
 # C++ in 21 days Part 1
 My note for learning C++ in 21 days (Day 1 - 5)
 
+Reference: Liberty, J., & Jones, B. L. (2004). _Sams teach yourself C++ in 21 days_. Sams Publishing.
+
 # About C++
 C++ is a compiled languages, meaning you can distribute the executable program (.exe) to people who don’t have the compiler. C++ fully supports object-oriented programming (OOP), including encapsulation, inheritance, and polymorphism.
 
