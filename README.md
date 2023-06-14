@@ -30,9 +30,16 @@ https://github.com/komxun/Cpp-in-21-days-Week1/blob/068273d47c433c7fa56719e12f97
 - Functions consist of a header and a body
 - The header consists of the return type, the function name, and the parameters to that function (their values = arguments)
 - The value returned MUST be of the same type declared in the function header
-- If you don't a return statement into the function, it automatically returns void !!!
+- If you don't put a return statement into the function, it automatically returns void !!!
 
 https://github.com/komxun/Cpp-in-21-days-Week1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_function_2.cpp#L5-L9
 
+# Variables and Constants
+- You must tell the compiler what type of variable it is: integer, floating-point number, character, etc.
+- signed integers can be negative or positive. unsigned integers are always positive
+- You define a variable by stating its type, followed by spaces, followed by the variable name and a semicolon
+- C++ is case sensitive, meaning uppercase and lowercase letters are different!
+
+![image](https://github.com/komxun/Cpp-in-21-days-Week1/assets/133139057/c46ff1c7-5457-476a-b2a5-0821f88ac91c)
 
 
