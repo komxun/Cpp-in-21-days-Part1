@@ -100,6 +100,28 @@ In this example, RED = 100, BLUE = 101, GREEN = 500, WHITE = 501, BLACK = 700
 **!!! Enumerator variables are generally of type unsigned int !!!**
 https://github.com/komxun/Cpp-in-21-days-Week1/blob/127d9c4ff1dd80e54af714e469fc9f810032907b/Day%203%20-%20Variables%20and%20constants/Using_enum.cpp#L1-L20
 
+# Self-assigned operators | Incrementing and Decrementing 
+```cpp
+x -= 5;  // same as x = x - 5
+x += 5;  // same as x = x + 5
+x /= 5;  // same as x = x / 5
+x *= 5;  // same as x = x * 5
+x %= 5;  // same as x = x % 5
+
+x--;  // same as x = x - 1
+x++;  // same as x = x + 1
+```
+
+# Prefix and Postfix Operators
+- The prefix operator (e.g. ++myAge) is evaluated before the assignment
+- The postfix operator (e.g. myAge) is evaluated after the assignment
+```cpp
+int a = ++x;    // same as    x = x+1;
+                //            a = x;
+
+int b = x++;    // same as    b = x;
+                //            x = x+1;
+```
 
 
 
