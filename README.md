@@ -78,6 +78,7 @@ const unsigned short int numObj = 15; // numObj is a symbolic constant
 
 # Enumerated Constant
 - Enumerated constants enable you to create **new types** and then define variables of those types whose values are restricted to a set of possible values
+- Enumerated constants have the advantages of being self-documenting
 ```c++
 enum COLOR {RED, BLUE, GREEN, WHITE, BLACK};
 ```
