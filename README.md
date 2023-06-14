@@ -42,4 +42,63 @@ https://github.com/komxun/Cpp-in-21-days-Week1/blob/068273d47c433c7fa56719e12f97
 
 ![image](https://github.com/komxun/Cpp-in-21-days-Week1/assets/133139057/c46ff1c7-5457-476a-b2a5-0821f88ac91c)
 
+## Assigning Values to Variables
+- You can initialize more than one variable at creation with mix definitions and initializations:
+```c++
+int myAge = 39, yourAge, hisAge = 40;
+```
+
+# Creating Aliases with type definition (typedef)
+- typedef is used to create a synonym of the phrase (not creating a new type)
+```c++
+typedef unsigned short int USHORT
+
+int main()
+{
+  USHORT Width = 5;
+  USHORT Length;
+  Length = 10;
+  return 0;
+}
+```
+# Constants
+- When a constant is initialized, you cannot assign a new value later!
+- C++ has two types of constants: literal and symbolic
+- A literal constant is a value typed directly into your program (the number is a constant)
+- A symbolic constant is a constant that is represented by a name
+- Symbolic constant can be declared with 1) #define (NOT recommended) 2) const
+
+```c++
+// Literal constant
+int myAge = 39; // 39 is a literal constant
+
+// Symbolic constant
+const unsigned short int numObj = 15; // numObj is a symbolic constant
+```
+
+# Enumerated Constant
+- Enumerated constants enable you to create **new types** and then define variables of those types whose values are restricted to a set of possible values
+```c++
+enum COLOR {RED, BLUE, GREEN, WHITE, BLACK};
+```
+The above example performs two tasks:
+1. It makes COLOR the name of an enumeration; that is, a new type
+2. It makes RED a symbolic constant with the value 0, BLUE = 1, GREEN = 2, WHITE = 3, BLACK = 4
+
+- Every enymerated constant has an integer value. If not specified, the first constant has the value 0, then 1, 2, ...
+- Any one of the constants can be initialized with a particular value, but those that are not initialized count upward from the ones before
+``` cpp
+enum Color {RED=100, BLUE, GREEN=500, WHITE, BLACK=700};
+
+// Define a new variable of type 'Color'
+Color thisFlower;
+thisFlower = RED;   // This create a constant thisFlower with the value 100
+```
+In this example, RED = 100, BLUE = 101, GREEN = 500, WHITE = 501, BLACK = 700 
+
+**!!! Enumerator variables are generally of type unsigned int !!!**
+https://github.com/komxun/Cpp-in-21-days-Week1/blob/127d9c4ff1dd80e54af714e469fc9f810032907b/Day%203%20-%20Variables%20and%20constants/Using_enum.cpp#L1-L20
+
+
+
 
