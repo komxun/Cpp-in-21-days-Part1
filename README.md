@@ -1,5 +1,5 @@
-# C++ in 21 days (Week 1)
-My note for learning C++ in 21 days
+# C++ in 21 days Part 1
+My note for learning C++ in 21 days (Day 1 - 5)
 
 # About C++
 C++ is a compiled languages, meaning you can distribute the executable program (.exe) to people who don’t have the compiler. C++ fully supports object-oriented programming (OOP), including encapsulation, inheritance, and polymorphism.
@@ -23,7 +23,7 @@ Encapsulation is the property of being a self-contained unit. You can accomplish
 - std::endl  is used to enter a new line to the console
 - std::endl is preferable to the use of \n because endl is adapted to the operating system in use. 
 
-https://github.com/komxun/Cpp-in-21-days-Week1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_using.cpp#L1-L23
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_using.cpp#L1-L23
 
 # Using Functions
 - A function that has nothing to return would be declared to return void
@@ -32,7 +32,7 @@ https://github.com/komxun/Cpp-in-21-days-Week1/blob/068273d47c433c7fa56719e12f97
 - The value returned MUST be of the same type declared in the function header
 - If you don't put a return statement into the function, it automatically returns void !!!
 
-https://github.com/komxun/Cpp-in-21-days-Week1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_function_2.cpp#L5-L9
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_function_2.cpp#L5-L9
 
 # Variables and Constants
 - You must tell the compiler what type of variable it is: integer, floating-point number, character, etc.
@@ -40,7 +40,7 @@ https://github.com/komxun/Cpp-in-21-days-Week1/blob/068273d47c433c7fa56719e12f97
 - You define a variable by stating its type, followed by spaces, followed by the variable name and a semicolon
 - C++ is case sensitive, meaning uppercase and lowercase letters are different!
 
-![image](https://github.com/komxun/Cpp-in-21-days-Week1/assets/133139057/c46ff1c7-5457-476a-b2a5-0821f88ac91c)
+![image](https://github.com/komxun/Cpp-in-21-days-Part1/assets/133139057/c46ff1c7-5457-476a-b2a5-0821f88ac91c)
 
 ## Assigning Values to Variables
 - You can initialize more than one variable at creation with mix definitions and initializations:
@@ -98,7 +98,7 @@ thisFlower = RED;   // This create a constant thisFlower with the value 100
 In this example, RED = 100, BLUE = 101, GREEN = 500, WHITE = 501, BLACK = 700 
 
 **!!! Enumerator variables are generally of type unsigned int !!!**
-https://github.com/komxun/Cpp-in-21-days-Week1/blob/127d9c4ff1dd80e54af714e469fc9f810032907b/Day%203%20-%20Variables%20and%20constants/Using_enum.cpp#L1-L20
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/127d9c4ff1dd80e54af714e469fc9f810032907b/Day%203%20-%20Variables%20and%20constants/Using_enum.cpp#L1-L20
 
 # Self-assigned operators | Incrementing and Decrementing 
 ```cpp
@@ -146,7 +146,7 @@ if (bigNum > smallNum)
 }
 ```
 
-https://github.com/komxun/Cpp-in-21-days-Week1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/nested_if_statement.cpp#L1-L37
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/nested_if_statement.cpp#L1-L37
 
 # Logical Operators
 - for best practice, use if(x != 0) instead of if(x), and use if(x == 0) instead of if(!x) 
@@ -170,6 +170,6 @@ if ( (x == 5) || (++y == 5) )
 (expression1) ? (expression2):(expression3)
 ```
 This means "If expression1 is true, return the value of expression2; otherwise, return the value of expressio3."
-https://github.com/komxun/Cpp-in-21-days-Week1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/conditional_operator.cpp#L15-L28
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/conditional_operator.cpp#L15-L28
 
 
