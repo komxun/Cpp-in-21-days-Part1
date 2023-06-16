@@ -86,7 +86,7 @@ enum Color {RED=100, BLUE, GREEN=500, WHITE, BLACK=700};
 
 // Define a new variable of type 'Color'
 Color thisFlower;
-thisFlower = RED;   // This create a constant thisFlower with the value 100
+thisFlower = RED;   // This creates a constant thisFlower with the value 100
 ```
 In this example, RED = 100, BLUE = 101, GREEN = 500, WHITE = 501, BLACK = 700 
 
@@ -116,8 +116,8 @@ int b = x++;    // same as    b = x;
                 //            x = x+1;
 ```
 # if Statement
-- Multiple statements are required to be surrrounded by braces {}
-- For one statement, the braces {} are not required, but should be put for best practice
+- Multiple statements are required to be surrounded by braces {}
+- For one statement, the braces {} are not required but should be put for best practice
 
 ```cpp
 // Single statement
@@ -149,7 +149,7 @@ https://github.com/komxun/Cpp-in-21-days-Part1/blob/e0eec0ee00e6673f449110f82669
 !(x == 5)               // Logical NOT (same as  x !=5 )
 ```
 ## Short Circuit Evaluation
-**Becareful! **
+**Be careful! **
 - When the compiler is evaluating an AND statement, if the first statement is False then the second statement WILL NOT be evaluated !!!
 - When the compiler is evaluating and OR statement, if the first statement is True then the second statement WILL NOT be evaluated !!!
 ```cpp
@@ -162,7 +162,7 @@ if ( (x == 5) || (++y == 5) )
 ```cpp
 (expression1) ? (expression2):(expression3)
 ```
-This means "If expression1 is true, return the value of expression2; otherwise, return the value of expressio3."
+This means "If expression1 is true, return the value of expression2; otherwise, return the value of expression3."
 https://github.com/komxun/Cpp-in-21-days-Part1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/conditional_operator.cpp#L15-L28
 
 # Functions
