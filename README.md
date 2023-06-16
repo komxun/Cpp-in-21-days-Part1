@@ -27,15 +27,6 @@ Encapsulation is the property of being a self-contained unit. You can accomplish
 
 https://github.com/komxun/Cpp-in-21-days-Part1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_using.cpp#L1-L23
 
-# Using Functions
-- A function that has nothing to return would be declared to return void
-- Functions consist of a header and a body
-- The header consists of the return type, the function name, and the parameters to that function (their values = arguments)
-- The value returned MUST be of the same type declared in the function header
-- If you don't put a return statement into the function, it automatically returns void !!!
-
-https://github.com/komxun/Cpp-in-21-days-Part1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_function_2.cpp#L5-L9
-
 # Variables and Constants
 - You must tell the compiler what type of variable it is: integer, floating-point number, character, etc.
 - signed integers can be negative or positive. unsigned integers are always positive
@@ -173,5 +164,98 @@ if ( (x == 5) || (++y == 5) )
 ```
 This means "If expression1 is true, return the value of expression2; otherwise, return the value of expressio3."
 https://github.com/komxun/Cpp-in-21-days-Part1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/conditional_operator.cpp#L15-L28
+
+# Functions
+
+Basic example:
+```c++
+int myFunction(int someValue, float someFloat);
+// This means that myFunction will return an integer, and it will take two values
+
+int theValueReturned = myFunction(5, 6.7);
+```
+![image](https://github.com/komxun/Cpp-in-21-days-Part1/assets/133139057/cae09e41-dbdf-4e8d-b469-6532f1f42266)
+
+## Function Prototype
+|![image](https://github.com/komxun/Cpp-in-21-days-Part1/assets/133139057/675ccbad-b091-4b57-881a-9d801eb69837)|
+|:--:|
+|**Parts of a function prototype**|
+- The function prototype is a statement, which means it **ends with a semicolon**;
+- The function prototype does not need to contain the names of the parameters, just their type, but it is not a good idea!
+- if the return type of function is not stated, its default is int
+``` cpp
+long Area(int, int);   // ok but bad
+long Area2(int length, int width);    // ok and good
+```
+
+## Defining the Function
+- Functions consist of a header and a body
+- The value returned MUST be of the same type declared in the function header
+- A function that has nothing to return would be declared to return void
+- If you don't put a return statement into the function, it automatically returns void !!!
+- Global variables are not recommended as they are shared data, and one function can change its value in a way that is invisible to another function!
+
+|![image](https://github.com/komxun/Cpp-in-21-days-Part1/assets/133139057/b9794817-84f9-4b37-b5d7-abbdcde74117)|
+|:--:|
+|**The structure of a function**|
+
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/b8c485475ee75d4e6f2fd440a25013d6705bd2e1/Day%205%20-%20Functions/function_declaration_and_definition.cpp#L4-L31
+
+- You can have more than one return statement in a single function
+```cpp
+return 5;
+return (x>5):   // (returning True of False)
+return (MyFunction());
+```
+
+## Default Parameters
+- A default value is a value to use if none is supplied to a funciton
+- A default value can be declared in the function prototype
+- Since parameter names are not required in a prototype, this declaration could omit the parameter name
+
+```cpp
+long myFunction (int x = 50);    // 50 is the default input to myFunction if no argument is supplied
+long myFunction2 (int = 69);     // This statement is also legal
+```
+
+- If any of the parameters does not have a default value, no previous parameter can have a default value!!!
+``` cpp
+long myFunction (int Param1, int Param2, int Param3);
+// You can assign a default value to Param2 only if you have assigned a default value to Param3
+// You can assign a default value to Param1 only if you've assigned a default value to both Param2 and Param3
+```
+
+# Overloading Functions (Function Polymorphism)
+C++ allows you to create more than one function with the same name so that the function is more flexible. This is called _function overloading_ or _function polymorphism_
+- The functions must differ in their parameter list with a different type of parameter, a different number of parameters, or both!!
+- The return types can be the same or different on overloaded functions
+
+```cpp
+// Example of function overloading
+int myFunction (int, int);
+int myFunction (long, long);
+int myFunction (long);
+```
+
+
+- The right function will be called automatically by matching the parameters used
+- Without function overloading, you would have to create multiple individual function for one task, for example:
+``` cpp
+// Without function overloading
+int AverageInt(int);
+float AverageFloat(float);
+// With function overloading
+int Average(int);
+float Average(float);
+```
+
+
+
+
+
+
+
+
+
 
 
