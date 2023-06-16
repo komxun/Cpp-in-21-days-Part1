@@ -225,7 +225,7 @@ long myFunction (int Param1, int Param2, int Param3);
 // You can assign a default value to Param1 only if you've assigned a default value to both Param2 and Param3
 ```
 
-# Overloading Functions (Function Polymorphism)
+## Overloading Functions (Function Polymorphism)
 C++ allows you to create more than one function with the same name so that the function is more flexible. This is called _function overloading_ or _function polymorphism_
 - The functions must differ in their parameter list with a different type of parameter, a different number of parameters, or both!!
 - The return types can be the same or different on overloaded functions
@@ -257,7 +257,7 @@ https://github.com/komxun/Cpp-in-21-days-Part1/blob/dc905a4d5f43167f5065a2aedc9d
 
 https://github.com/komxun/Cpp-in-21-days-Part1/blob/dc905a4d5f43167f5065a2aedc9d48052c4f3a35/Day%205%20-%20Functions/inline_function.cpp#L1-L32
 
-# Recursion
+## Recursion
 - Recursion is a function calling itself, which can be direct or indirect
 - Direct recursion = function calls itself, Indirect recursion = function calls another function that calls the first function
 - In recursion, a new copy of the function is run. The local variables in the 2nd version are independent of those in 1st version
