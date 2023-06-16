@@ -237,7 +237,6 @@ int myFunction (long, long);
 int myFunction (long);
 ```
 
-
 - The right function will be called automatically by matching the parameters used
 - Without function overloading, you would have to create multiple individual function for one task, for example:
 ``` cpp
@@ -248,14 +247,27 @@ float AverageFloat(float);
 int Average(int);
 float Average(float);
 ```
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/dc905a4d5f43167f5065a2aedc9d48052c4f3a35/Day%205%20-%20Functions/function_Polymorphism.cpp#L1-L63
 
+# Inline Functions
+- When you call the function, the execution of the program jumps to the instruction, and when the function returns, the execution jumps back
+- Inline functions can generally improve the efficiency of the program
+- Inline functions can be declared with **inline** at the function prototype
+- When the inline function is called, the compiler copy-paste the code just as if you had written the statements into the calling function
 
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/dc905a4d5f43167f5065a2aedc9d48052c4f3a35/Day%205%20-%20Functions/inline_function.cpp#L1-L32
 
+# Recursion
+- Recursion is a function calling itself, which can be direct or indirect
+- Direct recursion = function calls itself, Indirect recursion = function calls another function that calls the first function
+- In recursion, a new copy of the function is run. The local variables in the 2nd version are independent of those in 1st version
+- Recursive functions need a stop condition !!!
 
+![image](https://github.com/komxun/Cpp-in-21-days-Part1/assets/133139057/46d69d88-e873-4fcc-b168-2b885c5715c8)
 
+https://github.com/komxun/Cpp-in-21-days-Part1/blob/dc905a4d5f43167f5065a2aedc9d48052c4f3a35/Day%205%20-%20Functions/recursion_Fibonacci.cpp#L1-L34
 
-
-
+![image](https://github.com/komxun/Cpp-in-21-days-Part1/assets/133139057/aca27b0a-3499-478a-8370-15e1df1497df)
 
 
 
