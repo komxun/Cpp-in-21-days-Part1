@@ -2,6 +2,8 @@
 My note for learning C++ in 21 days (Day 1 - 5)
 
 Reference: Liberty, J., & Jones, B. L. (2004). _Sams teach yourself C++ in 21 days_. Sams Publishing.
+> Created by Komsun Tamanakijprasart
+
 
 Table of contents
 =================
