@@ -7,7 +7,9 @@ Table of contents
 =================
 
 <!--ts-->
-   * [About C++](#-A)
+   * [About C++](#-about-c++)
+      * [The Process of Creating the Program](#-the-process-of-creating-the-program)
+      * [The Anatomy of a C++ Program](#-the-anatomy-of-a-c++-program)
    * [Usage](#usage)
       * [STDIN](#stdin)
       * [Local files](#local-files)
@@ -25,17 +27,17 @@ Table of contents
 <!--te-->
 
 
-# A
+# About C++
 C++ is a compiled languages, meaning you can distribute the executable program (.exe) to people who don’t have the compiler. C++ fully supports object-oriented programming (OOP), including encapsulation, inheritance, and polymorphism.
 
 Encapsulation is the property of being a self-contained unit. You can accomplish data hiding with encapsulation. Changes can be made to workings of program without affecting the operation of the program.With inheritance, you can declare a new type that is an extension of an existing type and add additional capabilities. The program may respond differently than the original one but a user does not have to know about these differences. This is Polymorphism, the same name taking many forms.
 
-# The Process of Creating the Program
+## The Process of Creating the Program
 1.	Create a source code file with a .cpp extension
 2.	Compile the source code to create an object file (.obj or .o extension) with the Compiler
 3.	Link the object file with any needed libraries to produce an executable program (.exe)
 
-# The Anatomy of a C++ Program
+## The Anatomy of a C++ Program
 - The # symbol signals the preprocessor 
 - #include is a preprocessor instruction meaning that “What follows is a file-name. Find that file, read it, and place it right here”
 - iostream is a file in the directory that holds all the include files for your compiler
