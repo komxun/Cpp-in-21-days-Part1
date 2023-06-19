@@ -7,9 +7,9 @@ Table of contents
 =================
 
 <!--ts-->
-   * [About C++](#-about-c++)
+   * [About C++](#-about-c)
       * [The Process of Creating the Program](#-the-process-of-creating-the-program)
-      * [The Anatomy of a C++ Program](#-the-anatomy-of-a-c++-program)
+      * [The Anatomy of a C++ Program](#-the-anatomy-of-a-c-program)
    * [Usage](#usage)
       * [STDIN](#stdin)
       * [Local files](#local-files)
