@@ -7,23 +7,29 @@ Table of contents
 =================
 
 <!--ts-->
-   * [About C++](#about-c)
+  * [About C++](#about-c)
       * [The Process of Creating the Program](#the-process-of-creating-the-program)
       * [The Anatomy of a C++ Program](#the-anatomy-of-a-c-program)
-   * [Usage](#usage)
-      * [STDIN](#stdin)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-      * [Auto insert and update TOC](#auto-insert-and-update-toc)
-      * [GitHub token](#github-token)
-      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
-   * [Tests](#tests)
-   * [Dependency](#dependency)
-   * [Docker](#docker)
-     * [Local](#local)
-     * [Public](#public)
+  * [Using the Standard Namespace](#using-the-standard-namespace)
+  * [Variables and Constants](#variables-and-constants)
+      * [Assigning Values to Variables](#assigning-values-to-variables)
+      * [Creaing Aliases with type definition (typedef)](#creating-aliases-with-type-definition-typedef)
+      * [Constants](#constants)
+  * [Enumerated Constant](#enumerated-constant)
+  * [Self-assigned operators | Incrementing and Decrementing](#self-assigned-operators--incrementing-and-decrementing)
+  * [Prefix and Postfix Operators](#prefix-and-postfix-operators)
+  * [if Statement](#if-statement)
+  * [Logical Operators](#logical-operators)
+      * [Short Circuit Evaluation](#short-circuit-evaluation)
+  * [The Conditional (Ternary) (?:) Operator](#the-conditional-ternary--operator)
+  * [Functions](#functions)
+      * [Function Prototype](#function-prototype)
+      * [Defining the Function](#defining-the-function)
+      * [Default Parameters](#default-parameters)
+      * [Overloading Functions (Function Polymorphism)](#overloading-functions-function-polymorphism)
+  * [Inline Functions](#inline-functions)
+      * [Recursion](#recursion)
+     
 <!--te-->
 
 
@@ -65,7 +71,7 @@ https://github.com/komxun/Cpp-in-21-days-Part1/blob/068273d47c433c7fa56719e12f97
 int myAge = 39, yourAge, hisAge = 40;
 ```
 
-# Creating Aliases with type definition (typedef)
+## Creating Aliases with type definition (typedef)
 - typedef is used to create a synonym of the phrase (not creating a new type)
 ```c++
 typedef unsigned short int USHORT
@@ -78,7 +84,7 @@ int main()
   return 0;
 }
 ```
-# Constants
+## Constants
 - When a constant is initialized, you cannot assign a new value later!
 - C++ has two types of constants: literal and symbolic
 - A literal constant is a value typed directly into your program (the number is a constant)
