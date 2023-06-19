@@ -3,7 +3,29 @@ My note for learning C++ in 21 days (Day 1 - 5)
 
 Reference: Liberty, J., & Jones, B. L. (2004). _Sams teach yourself C++ in 21 days_. Sams Publishing.
 
-# About C++
+Table of contents
+=================
+
+<!--ts-->
+   * [About C++](#-A)
+   * [Usage](#usage)
+      * [STDIN](#stdin)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+      * [Auto insert and update TOC](#auto-insert-and-update-toc)
+      * [GitHub token](#github-token)
+      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
+   * [Docker](#docker)
+     * [Local](#local)
+     * [Public](#public)
+<!--te-->
+
+
+# A
 C++ is a compiled languages, meaning you can distribute the executable program (.exe) to people who don’t have the compiler. C++ fully supports object-oriented programming (OOP), including encapsulation, inheritance, and polymorphism.
 
 Encapsulation is the property of being a self-contained unit. You can accomplish data hiding with encapsulation. Changes can be made to workings of program without affecting the operation of the program.With inheritance, you can declare a new type that is an extension of an existing type and add additional capabilities. The program may respond differently than the original one but a user does not have to know about these differences. This is Polymorphism, the same name taking many forms.
