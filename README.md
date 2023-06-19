@@ -36,24 +36,24 @@ Table of contents
 # About C++
 C++ is a compiled languages, meaning you can distribute the executable program (.exe) to people who don’t have the compiler. C++ fully supports object-oriented programming (OOP), including encapsulation, inheritance, and polymorphism.
 
-Encapsulation is the property of being a self-contained unit. You can accomplish data hiding with encapsulation. Changes can be made to workings of program without affecting the operation of the program.With inheritance, you can declare a new type that is an extension of an existing type and add additional capabilities. The program may respond differently than the original one but a user does not have to know about these differences. This is Polymorphism, the same name taking many forms.
+Encapsulation is the property of being a self-contained unit. You can accomplish data hiding with encapsulation. Changes can be made to workings of program without affecting the operation of the program. With inheritance, you can declare a new type that is an extension of an existing type and add additional capabilities. The program may respond differently than the original one but a user does not have to know about these differences. This is Polymorphism, the same name taking many forms.
 
 ## The Process of Creating the Program
-1.	Create a source code file with a .cpp extension
-2.	Compile the source code to create an object file (.obj or .o extension) with the Compiler
-3.	Link the object file with any needed libraries to produce an executable program (.exe)
+1.	Create a source code file with a `.cpp` extension
+2.	Compile the source code to create an object file (`.obj` or `.o` extension) with the Compiler
+3.	Link the object file with any needed libraries to produce an executable program (`.exe`)
 
 ## The Anatomy of a C++ Program
-- The # symbol signals the preprocessor 
-- #include is a preprocessor instruction meaning that “What follows is a file-name. Find that file, read it, and place it right here”
-- iostream is a file in the directory that holds all the include files for your compiler
-- main() is a special function that’s called automatically when your program starts. Every C++ program has a main() function
-- For best practice, main() should be specified to return integer value 0
+- The `#` symbol signals the preprocessor 
+- `#include` is a preprocessor instruction meaning that “What follows is a file-name. Find that file, read it, and place it right here”
+- `iostream` is a file in the directory that holds all the include files for your compiler
+- `main()` is a special function that’s called automatically when your program starts. Every C++ program has a `main()` function
+- For best practice, `main()` should be specified to return integer value 0
 
 # Using the Standard Namespace
-- Declare to use the standard namespace (std)
-- std::endl  is used to enter a new line to the console
-- std::endl is preferable to the use of \n because endl is adapted to the operating system in use. 
+- Declare to use the standard namespace (`std`)
+- `std::endl`  is used to enter a new line to the console
+- `std::endl` is preferable to the use of `\n` because endl is adapted to the operating system in use. 
 
 https://github.com/komxun/Cpp-in-21-days-Part1/blob/068273d47c433c7fa56719e12f97d39bdf59fbfb/Day%202%20-%20Anatomy%20of%20C%2B%2B%20program/using_using.cpp#L1-L23
 
@@ -72,7 +72,7 @@ int myAge = 39, yourAge, hisAge = 40;
 ```
 
 ## Creating Aliases with type definition (typedef)
-- typedef is used to create a synonym of the phrase (not creating a new type)
+- `typedef` is used to create a synonym of the phrase (not creating a new type)
 ```c++
 typedef unsigned short int USHORT
 
@@ -89,7 +89,7 @@ int main()
 - C++ has two types of constants: literal and symbolic
 - A literal constant is a value typed directly into your program (the number is a constant)
 - A symbolic constant is a constant that is represented by a name
-- Symbolic constant can be declared with 1) #define (NOT recommended) 2) const
+- Symbolic constant can be declared with 1) `#define` (NOT recommended), or 2) `const`
 
 ```c++
 // Literal constant
@@ -109,7 +109,7 @@ The above example performs two tasks:
 1. It makes COLOR the name of an enumeration; that is, a new type
 2. It makes RED a symbolic constant with the value 0, BLUE = 1, GREEN = 2, WHITE = 3, BLACK = 4
 
-- Every enymerated constant has an integer value. If not specified, the first constant has the value 0, then 1, 2, ...
+- Every enumerated constant has an integer value. If not specified, the first constant has the value 0, then 1, 2, ...
 - Any one of the constants can be initialized with a particular value, but those that are not initialized count upward from the ones before
 ``` cpp
 enum Color {RED=100, BLUE, GREEN=500, WHITE, BLACK=700};
@@ -146,8 +146,8 @@ int b = x++;    // same as    b = x;
                 //            x = x+1;
 ```
 # if Statement
-- Multiple statements are required to be surrounded by braces {}
-- For one statement, the braces {} are not required but should be put for best practice
+- Multiple statements are required to be surrounded by braces { }
+- For one statement, the braces { } are not required but should be put for best practice
 
 ```cpp
 // Single statement
@@ -172,7 +172,7 @@ if (bigNum > smallNum)
 https://github.com/komxun/Cpp-in-21-days-Part1/blob/e0eec0ee00e6673f449110f8266971fa8867a19e/Day%204%20-%20Expression%20and%20Statements/nested_if_statement.cpp#L1-L37
 
 # Logical Operators
-- for best practice, use if(x != 0) instead of if(x), and use if(x == 0) instead of if(!x) 
+- for best practice, use `if(x != 0)` instead of `if(x)`, and use `if(x == 0)` instead of `if(!x)` 
 ```cpp
 (x == 5) && (y == 5)    // Logical AND
 (x == 5) || (y == 5)    // Logical OR
@@ -188,7 +188,7 @@ if ( (x == 5) || (++y == 5) )
 ```
 
 # The Conditional (Ternary) (?:) Operator
-- The conditional operator (?:) is C++'s only ternary operator, it is the only operator to take 3 terms
+- The conditional operator (`?:`) is C++'s only ternary operator, it is the only operator to take 3 terms
 ```cpp
 (expression1) ? (expression2):(expression3)
 ```
@@ -212,7 +212,7 @@ int theValueReturned = myFunction(5, 6.7);
 |**Parts of a function prototype**|
 - The function prototype is a statement, which means it **ends with a semicolon**;
 - The function prototype does not need to contain the names of the parameters, just their type, but it is not a good idea!
-- if the return type of function is not stated, its default is int
+- if the return type of function is not stated, its default is `int`
 ``` cpp
 long Area(int, int);   // ok but bad
 long Area2(int length, int width);    // ok and good
@@ -222,7 +222,7 @@ long Area2(int length, int width);    // ok and good
 - Functions consist of a header and a body
 - The value returned MUST be of the same type declared in the function header
 - A function that has nothing to return would be declared to return void
-- If you don't put a return statement into the function, it automatically returns void !!!
+- If you don't put a `return` statement into the function, it automatically returns void !!!
 - Global variables are not recommended as they are shared data, and one function can change its value in a way that is invisible to another function!
 
 |![image](https://github.com/komxun/Cpp-in-21-days-Part1/assets/133139057/b9794817-84f9-4b37-b5d7-abbdcde74117)|
@@ -282,7 +282,7 @@ https://github.com/komxun/Cpp-in-21-days-Part1/blob/dc905a4d5f43167f5065a2aedc9d
 # Inline Functions
 - When you call the function, the execution of the program jumps to the instruction, and when the function returns, the execution jumps back
 - Inline functions can generally improve the efficiency of the program
-- Inline functions can be declared with **inline** at the function prototype
+- Inline functions can be declared with `inline` at the function prototype
 - When the inline function is called, the compiler copy-paste the code just as if you had written the statements into the calling function
 
 https://github.com/komxun/Cpp-in-21-days-Part1/blob/dc905a4d5f43167f5065a2aedc9d48052c4f3a35/Day%205%20-%20Functions/inline_function.cpp#L1-L32
